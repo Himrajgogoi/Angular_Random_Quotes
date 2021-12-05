@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+.root{
+    padding: 1vh 4vw;
+    background-image: url('./app/images/Quote.png');
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header a{
+    margin: 1vh 2vw;
+}
+header h3{
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header h3:hover{
+   transform: scale(1.5);
+   transition: ease-in-out 1.2s;
+}
+footer{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.card{
+    background-color: beige;
+    min-height: 20vh;
+    min-width: 35vw;
+    padding: 4vh 2vw;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.home{
+    min-height: 70vh;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#card_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.favourites{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.quote-item{
+    margin: 1em;
+  
+}
+h1{
+    text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+
+    .quote-item{
+        flex: 1 0 33%;      
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

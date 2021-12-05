@@ -1,0 +1,6 @@
+<div>
+     <h1>Your Favourites</h1>
+     <div class="favourites">
+          <app-quote *ngFor="let quote of quotes" [quote] = "quote" (addQuoteToSaved) ="deleteQuote(quote)" class="quote-item"></app-quote>
+     </div>
+</div>

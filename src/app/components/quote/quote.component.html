@@ -1,0 +1,18 @@
+<div class="card">
+   <div *ngIf="quote; else other_content">
+    <h2>{{quote.content}}</h2>
+    <h4>{{quote.author}}</h4>
+    <div id="card_button">
+        <mat-icon *ngIf ="hasRoute('/'); else trash" aria-hidden="false" aria-label="Save" (click)="onClick()">save</mat-icon>
+        <ng-template #trash>
+            <mat-icon aria-hidden="false" aria-label="Save" (click)="onClick()">delete</mat-icon>
+        </ng-template>
+    </div>
+   </div>
+   <ng-template #other_content>
+    <div>
+        <h2>{{text}}</h2>
+        <h4>{{details}}</h4>
+       </div>
+   </ng-template>
+</div>
